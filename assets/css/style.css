@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+html {
+  background-color: rgba(172, 255, 47, 0.726);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  margin: 0;
+}
+header h1 {
+  font-family: "Sigmar", cursive;
+  padding: 0 20px 0 20px;
+  color: rgba(30, 49, 0, 0.726);
+  text-shadow: 2px 2px 0px rgb(255, 255, 255), 5px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+header img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: transform 0.11s;
+}
+header img:hover {
+  transform: scale(0.9);
+}
+
+main {
+  display: flex;
+}
+@media (orientation: landscape) {
+  main {
+    flex-flow: row wrap;
+    flex-wrap: nowrap;
+  }
+  main section {
+    margin: 5px;
+    border-radius: 32px 32px 32px 32px;
+    border: 5px solid #007531;
+    background-color: white;
+    padding: 10px;
+    width: 49vw;
+  }
+}
+@media (orientation: portrait) {
+  main {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main section {
+    margin: 1px;
+    border-radius: 32px 32px 32px 32px;
+    border: 5px solid #007531;
+    background-color: white;
+    padding: 10px;
+    width: 90vw;
+  }
+}
+main section h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(30, 49, 0, 0.726);
+  text-shadow: 2px 2px 0px rgb(255, 255, 255), 5px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+main section ul {
+  list-style-type: none;
+  padding: 0;
+}
+main section ul li {
+  margin: 2px;
+}
+main section ul li a {
+  transition: transform 0.11s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section ul li a:hover {
+  transform: scale(0.9);
+}
+main section ul li a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  background: #007531;
+  padding: 10px;
+}
+main .event a:link {
+  text-decoration: none;
+  color: black;
+}
+main .event a div {
+  margin-bottom: 5px;
+  transition: transform 0.11s;
+  border: 1px solid #007531;
+  display: flex;
+  flex-direction: column;
+}
+main .event a div:hover {
+  transform: scale(0.9);
+}
+main .event a div h3 {
+  background-color: #007531;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+main .event a div span {
+  display: flex;
+  padding: 2px;
+  border-right: 1px double #007531;
+  border-bottom: 1px double #007531;
+  border-left: 1px double #007531;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+}
+main .event a div p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer a {
+  color: rgb(0, 140, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1176470588);
+  padding: 1px;
+}
+footer a:link {
+  color: rgb(0, 140, 255);
+  text-decoration: none;
+}
+footer a:link:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=style.css.map */
